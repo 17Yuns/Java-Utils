@@ -1,4 +1,4 @@
-package com.yiqiyuns.RequestUtils;
+package com.yiqiyuns.WebUtils;
 
 import okhttp3.*;
 import org.jetbrains.annotations.NotNull;
@@ -16,11 +16,12 @@ import java.io.IOException;
  * @author 17Yuns
  * @version 1.0
  */
-public class SendRequestsUtils {
+@SuppressWarnings("all")
+public class RequestsUtils {
     private final OkHttpClient okHttpClient;
 
     // 构造方法
-    public SendRequestsUtils() {
+    public RequestsUtils() {
         this.okHttpClient = new OkHttpClient.Builder()
                 .build();
     }

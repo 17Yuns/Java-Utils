@@ -12,6 +12,7 @@ import java.util.List;
  * @author 17Yuns
  * @version 1.0
  */
+@SuppressWarnings("all")
 public class IpUtils {
 
     // 常见的获取IP地址的请求头
