@@ -14,7 +14,6 @@ public class StorageHashMapUtil {
 
     // 使用 ConcurrentHashMap 存储数据，支持任意类型
     private ConcurrentHashMap<String, Object> dataMap = new ConcurrentHashMap<>();
-
     // 私有化构造器，防止外部创建实例
     private StorageHashMapUtil() {}
 
@@ -42,7 +41,6 @@ public class StorageHashMapUtil {
     public void removeData(String key) {
         dataMap.remove(key);
     }
-
     // 获取数据并转换为指定类型
     public <T> T getData(String key, Class<T> clazz) {
         Object value = dataMap.get(key);
